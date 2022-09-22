@@ -47,6 +47,7 @@ else
     A (7,-5, 0); B (1,-1,9) -> 11.53
 */
 
+/*
 Console.Write("Введите координаты x,y,z точки А через пробел: ");
 string []s = Console.ReadLine().Split();
 int ax = int.Parse(s[0]), ay = int.Parse(s[1]), az = int.Parse(s[2]);
@@ -57,4 +58,20 @@ int bx = int.Parse(s[0]), by = int.Parse(s[1]), bz = int.Parse(s[2]);
 
 double r = Math.Sqrt((ax-bx)*(ax-bx) + (ay-by)*(ay-by) + (az-bz)*(az-bz));
 Console.WriteLine($"рассточние между точками равно {r}");
+*/
+
+
+/*
+Задача 23
+Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+    3 -> 1, 8, 27
+    5 -> 1, 8, 27, 64, 125
+*/
+
+Console.Write("Введите число: ");
+int N = int.Parse(Console.ReadLine());
+
+for(int i=1; i<=N; i++)
+    Console.Write(i*i*i + " ");
+
 
